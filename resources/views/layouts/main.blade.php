@@ -177,11 +177,13 @@
     </div>
     <div id="area">
         <ul class="circles">
+            <img src="{{ asset('LOGO_1.svg') }}" alt="" srcset="">
+            <li></li>
+            <img src="{{ asset('LOGO_1.svg') }}" alt="" srcset="">
+            <img src="{{ asset('LOGO_1.svg') }}" alt="" srcset="">
             <li></li>
             <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <img src="{{ asset('LOGO_1.svg') }}" alt="" srcset="">
         </ul>
         <div class='light x2'></div>
         <div class='light x3'></div>
