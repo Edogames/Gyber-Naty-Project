@@ -25,8 +25,30 @@
                             <h2>Gyber.org</h2>
                         </div>
                     </a>
-                    @yield('btn')
-                </div>
+                    <div class="head-btn">
+                        @yield('btn')
+                    </div>
+                    @if (Route::current()->getName() != 'sale')
+                        <a href="{{ URL::route('sale') }}" class="btn">Private Sale</a>
+                    @else
+                        <a href="{{ URL::route('home') }}" class="btn">Home</a>
+                    @endif
+                    <div id="menu-btn" onclick="toggleMenu()">
+                        <div class="stick"></div>
+                        <div class="stick middle"></div>
+                        <div class="stick last"></div>
+                    </div>
+                    <div class="menu">
+                        <a href="{{ URL::route('home') }}">
+                            <h2 id="home">Home</h2>
+                        </a>
+                        <a href="{{ URL::route('philosophy') }}">
+                            <h2 id="paper">Philosophy</h2>
+                        </a>
+                        <a href="{{ asset('pdf/info.pdf') }}" target="_blank">
+                            <h2 id="paper">Lite Paper</h2>
+                        </a>
+                    </div>
             </div>
             
         </header>
@@ -50,9 +72,100 @@
                         <a href="http://" target="_blank" style="width: fit-content; height: fit-content;" rel="noopener noreferrer"><img class="icon" src="{{ asset('images/icons/twitter_icon.png') }}"></a>
                         <a href="http://" target="_blank" style="width: fit-content; height: fit-content;" rel="noopener noreferrer"><img class="icon" src="{{ asset('images/icons/discord_icon.png') }}"></a>
                     </div>
+                    <button onclick="toggleMap()" class="btn">Road map</a>
                     <br>
                 </div>
                 <hr>
+                <div id="road-map">
+                    <div class="d-flex space-between">
+                        <h3 class="square-text">
+                            <div class="text-box">
+                                Сreating private
+                                repositories
+                            </div>
+                            <div class="text-box">
+                                Creating <span>Gyber</span>
+                                Token Contract
+                            </div>
+                            <div class="text-box">
+                                Organization of the
+                                main functions of
+                                the experiment
+                            </div>
+                            <div class="text-box">
+                                Privat sale of <span>Gyber</span>
+                                utility token
+                            </div>
+                            <div class="text-box">
+                                Development of the
+                                functional part of the
+                                distributed creative
+                                platform.
+                            </div>
+                            <div class="date">
+                                2022-2023
+                                <div></div>
+                            </div>
+                        </h3>
+                        <h3 class="square-text">
+                            <div class="text-box">
+                                Public sale of <span>Gyber</span>
+                                utility token
+                            </div>
+                            <div class="text-box">
+                                Сreating public
+                                repositories
+                            </div>
+                            <div class="text-box">
+                                Starting Test net of
+                                <span>Gyber</span> BlockChain
+                            </div>
+                            <div class="text-box">
+                                Publication the
+                                "Basic Theory of
+                                Cybersociety"
+                            </div>
+                            <div class="text-box">
+                                Сreating a cyber-social
+                                corporation using existing
+                                experiment resources
+                            </div>
+                            <div class="date">
+                                2024-2025
+                                <div></div>
+                            </div>
+                        </h3>
+                        <h3 class="square-text">
+                            <div class="text-box">
+                                Сreation of a new global
+                                economic model -
+                                macroeconomic dao
+                            </div>
+                            <div class="text-box">
+                                Сreating a decentalzed
+                                storage based on mobile
+                                and stationary nodes
+                            </div>
+                            <div class="text-box">
+                                Сreating virtual machine
+                                based on mobile and
+                                stationary nodes
+                            </div>
+                            <div class="text-box">
+                                Publication  external api,
+                                for interaction within the
+                                extensible platform
+                            </div>
+                            <div class="date">
+                                2026-2027
+                                <div></div>
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="bottom-border">
+                        <div></div>
+                    </div>
+                </div>
             </footer>
         </div>
 

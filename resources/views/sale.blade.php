@@ -3,11 +3,7 @@
 @section('title', 'Private sales')
 
 @section('btn')
-    <th>
-        <h2 id="header-txt" style="color: #533278;">The Macroeconomic DAO</h2>
-    </th>
-
-    <a href="{{ URL::route('home') }}" class="btn">Home</a>
+    <h2 id="header-txt" style="color: #533278;">The Macroeconomic DAO</h2>
 @endsection
 
 @section('content')

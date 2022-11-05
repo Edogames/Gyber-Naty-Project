@@ -20,6 +20,9 @@ Route::get('/', function () {
 Route::get('/sale', function () {
     return view('sale');
 })->name('sale');
+Route::get('/philosophy', function () {
+    return view('philosophy');
+})->name('philosophy');
 
 Route::post('/send', 'App\Http\Controllers\MailSender@send')->name('sale.send');
 

@@ -3,14 +3,14 @@
 @section('title', 'home')
 
 @section('btn')
-    <th>
+    <div class="d-flex">
         <a href="{{ asset('pdf/info.pdf') }}" target="_blank">
             <h2 id="chosen">Lite Paper</h2>
         </a>
-    </th>
-    <th>
-        <a href="{{ URL::route('sale') }}" class="btn">Private Sale</a>
-    </th>
+        <a href="{{ asset('pdf/Philosophy.pdf') }}" target="_blank">
+            <h2 id="chosen">Philosophy</h2>
+        </a>
+    </div>
 @endsection
 
 @section('content')
