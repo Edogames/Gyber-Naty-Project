@@ -42,7 +42,7 @@
                         <a href="{{ URL::route('home') }}">
                             <h2 id="home">Home</h2>
                         </a>
-                        <a href="{{ URL::route('philosophy') }}">
+                        <a href="{{ asset('pdf/Philosophy.pdf') }}" target="_blank">
                             <h2 id="paper">Philosophy</h2>
                         </a>
                         <a href="{{ asset('pdf/info.pdf') }}" target="_blank">
