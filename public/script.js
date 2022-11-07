@@ -29,13 +29,6 @@ document.onmousedown = function (event) {
         return false;
     }
 }
-document.onkeydown = function (event) {
-    event = (event || window.event);
-    if (event.keyCode == 123) {
-        //alert('No F-keys');
-        return false;
-    }
-}
 
 function toggleMenu(){
     if(visible == true){
