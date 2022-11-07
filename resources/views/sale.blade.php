@@ -21,7 +21,8 @@
             <input class="input-field" required type="text" id="invest" name="invest" placeholder="Amount of investment">
             <p style="color: red" id="err"></p>
             <input type="email" required id="email" name="email" placeholder="Email">
-            <button id="submit" type="submit">OK</button>
+            {{-- <button id="submit" onclick="web3Login(e)" type="submit">OK</button> --}}
+            <button id="submit" onclick="web3Login(e)" type="submit">OK</button>
         </form>
     </div>
 @endsection

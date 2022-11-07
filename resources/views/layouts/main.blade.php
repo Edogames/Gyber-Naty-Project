@@ -50,7 +50,7 @@
                         </a>
                     </div>
             </div>
-            
+
         </header>
         <div class="wrapper">
             <div class="container">
@@ -60,6 +60,7 @@
                 <hr>
                 <div id="footer">
                     <br>
+                    <button onclick="toggleMap()" class="btn">Close</button>
                     <div class="d-flex" id="footer-logo">
                         <img src="{{ asset('images/by.png') }}">
                         <h2>Gybernaty</h2>
@@ -72,98 +73,108 @@
                         <a href="http://" target="_blank" style="width: fit-content; height: fit-content;" rel="noopener noreferrer"><img class="icon" src="{{ asset('images/icons/twitter_icon.png') }}"></a>
                         <a href="http://" target="_blank" style="width: fit-content; height: fit-content;" rel="noopener noreferrer"><img class="icon" src="{{ asset('images/icons/discord_icon.png') }}"></a>
                     </div>
-                    <button onclick="toggleMap()" class="btn">Road map</a>
                     <br>
                 </div>
                 <hr>
                 <div id="road-map">
-                    <div class="d-flex space-between">
-                        <h3 class="square-text">
-                            <div class="text-box">
-                                Сreating private
-                                repositories
-                            </div>
-                            <div class="text-box">
-                                Creating <span>Gyber</span>
-                                Token Contract
-                            </div>
-                            <div class="text-box">
-                                Organization of the
-                                main functions of
-                                the experiment
-                            </div>
-                            <div class="text-box">
-                                Privat sale of <span>Gyber</span>
-                                utility token
-                            </div>
-                            <div class="text-box">
-                                Development of the
-                                functional part of the
-                                distributed creative
-                                platform.
-                            </div>
-                            <div class="date">
-                                2022-2023
-                                <div></div>
-                            </div>
-                        </h3>
-                        <h3 class="square-text">
-                            <div class="text-box">
-                                Public sale of <span>Gyber</span>
-                                utility token
-                            </div>
-                            <div class="text-box">
-                                Сreating public
-                                repositories
-                            </div>
-                            <div class="text-box">
-                                Starting Test net of
-                                <span>Gyber</span> BlockChain
-                            </div>
-                            <div class="text-box">
-                                Publication the
-                                "Basic Theory of
-                                Cybersociety"
-                            </div>
-                            <div class="text-box">
-                                Сreating a cyber-social
-                                corporation using existing
-                                experiment resources
-                            </div>
-                            <div class="date">
-                                2024-2025
-                                <div></div>
-                            </div>
-                        </h3>
-                        <h3 class="square-text">
-                            <div class="text-box">
-                                Сreation of a new global
-                                economic model -
-                                macroeconomic dao
-                            </div>
-                            <div class="text-box">
-                                Сreating a decentalzed
-                                storage based on mobile
-                                and stationary nodes
-                            </div>
-                            <div class="text-box">
-                                Сreating virtual machine
-                                based on mobile and
-                                stationary nodes
-                            </div>
-                            <div class="text-box">
-                                Publication  external api,
-                                for interaction within the
-                                extensible platform
-                            </div>
-                            <div class="date">
-                                2026-2027
-                                <div></div>
-                            </div>
-                        </h3>
-                    </div>
-                    <div class="bottom-border">
-                        <div></div>
+                    <h1 style="width: 100%; text-align: center; font-family: 'Grape Nuts'; color: #90AADB; font-size: 50px; font-weight: 200;">Road map</h1>
+                    <div class="rm-container">
+                        <div class="d-flex space-between">
+                            <h3 class="square-text">
+                                <div class="card-container">
+                                    <div class="text-box">
+                                        Сreating private<br>
+                                        repositories
+                                    </div>
+                                    <div class="text-box">
+                                        Creating <span>Gyber</span><br>
+                                        Token Contract
+                                    </div>
+                                    <div class="text-box">
+                                        Organization of the<br>
+                                        main functions of <br>
+                                        the experiment
+                                    </div>
+                                    <div class="text-box">
+                                        Privat sale of <span>Gyber</span> <br>
+                                        utility token
+                                    </div>
+                                    <div class="text-box">
+                                        Development of the <br>
+                                        functional part of the <br>
+                                        distributed creative <br>
+                                        platform.
+                                    </div>
+                                </div> <br>
+                                <div class="date">
+                                    2022-2023
+                                    <div></div>
+                                </div>
+                            </h3>
+                            <h3 class="square-text">
+                                <div class="card-container">
+                                    <div class="text-box">
+                                        Public sale of <span>Gyber</span> <br>
+                                        utility token
+                                    </div>
+                                    <div class="text-box">
+                                        Сreating public <br>
+                                        repositories
+                                    </div>
+                                    <div class="text-box">
+                                        Starting Test net of <br>
+                                        <span>Gyber</span> BlockChain
+                                    </div>
+                                    <div class="text-box">
+                                        Publication the <br>
+                                        "Basic Theory of <br>
+                                        Cybersociety"
+                                    </div>
+                                    <div class="text-box">
+                                        Сreating a cyber-social <br>
+                                        corporation using existing <br>
+                                        experiment resources
+                                    </div> 
+                                </div>
+                                    <br>
+                                <div class="date">
+                                    2024-2025
+                                    <div></div>
+                                </div>
+                            </h3>
+                            <h3 class="square-text">
+                                <div class="card-container">
+                                    <div class="text-box">
+                                        Сreation of a new global <br>
+                                        economic model - <br>
+                                        macroeconomic dao
+                                    </div>
+                                    <div class="text-box">
+                                        Сreating a decentalzed <br>
+                                        storage based on mobile <br>
+                                        and stationary nodes
+                                    </div>
+                                    <div class="text-box">
+                                        Сreating virtual machine <br>
+                                        based on mobile and <br>
+                                        stationary nodes
+                                    </div>
+                                    <div class="text-box">
+                                        Publication  external api, <br>
+                                        for interaction within the <br>
+                                        extensible platform
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="date">
+                                    2026-2027
+                                    <div></div>
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="bottom-border">
+                            <div></div>
+                        </div>
                     </div>
                 </div>
             </footer>

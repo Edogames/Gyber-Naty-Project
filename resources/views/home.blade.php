@@ -23,6 +23,7 @@
         <h5>Millions of users can spend</h5>
         <h5>billions on their interests</h5>
     </div>
+    <button onclick="toggleMap()" class="btn1">Close</button>
 @endsection
 
 @section('js')

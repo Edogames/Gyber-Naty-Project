@@ -22,13 +22,6 @@ window.addEventListener('resize', function() {
     }
 });
 
-document.onkeypress = function (event) {
-    event = (event || window.event);
-    if (event.keyCode == 123) {
-       //alert('No F-12');
-        return false;
-    }
-}
 document.onmousedown = function (event) {
     event = (event || window.event);
     if (event.keyCode == 123) {
@@ -74,23 +67,28 @@ let visibleMap = true;
 let footer = document.querySelector('footer');
 let roadMap = document.getElementById('road-map');
 let bottomBorder = document.querySelector('.bottom-border');
+let header = document.querySelector('header');
 let textBox = document.querySelectorAll('.square-text');
+let container = document.querySelector('.container');
 
 function checkVisible(){
     if(visibleMap == false){
         footer.style.width = "100%";
+        header.style.display = "none";
         footer.style.background = "rgb(0, 0, 0, 1)";
-        footer.style.transform = `translateY(-70vh)`;
-        roadMap.style.height = "75vh";
+        footer.style.transform = `translateY(-50%)`;
+        roadMap.style.height = "100%";
         roadMap.style.display = "block";
         bottomBorder.style.display = "block";
         textBox.forEach(i => {
-            i.style.height = "fit-content";
+            i.style.height = "480px";
             i.style.display = "block";
             i.style.margin = "auto";
+            i.style.marginBottom = "20px";
         });
     }else{
         footer.style.width = "70%";
+        header.style.display = "block";
         footer.style.background = "rgba(0, 0, 0, 0)";
         footer.style.transform = `translateY(-42px)`;
         roadMap.style.height = "fit-content";
@@ -121,3 +119,11 @@ let colors = ['#EA6CFF', '#5A8CEC', '#89AB00'];
 for(let i = 0; i < date.length; i ++){
     date[i].style.color = colors[i];
 }
+
+// async function web3Login(e) {
+//     e.preventDefault();
+//     if (!window.ethereum) {
+//         alert('MetaMask not detected. Please install MetaMask first.');
+//         return;
+//     }
+// }

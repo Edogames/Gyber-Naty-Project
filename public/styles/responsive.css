@@ -109,7 +109,7 @@
         width: 10%;
     }
     header .logo .main-logo{
-        --size: 60px;
+        --size: 50px;
     }
     header .logo h2{
         font-size: 30px;
@@ -200,10 +200,11 @@
         margin: 7% auto;
     }
     .glow-on-hover{
-        --fontSize: 40px;
+        --fontSize: 30px;
         font-size: var(--fontSize);
         padding: calc(var(--fontSize) - 10px) calc(var(--fontSize) + 20px);
         margin: 80px auto;
+        margin-bottom: 60px;
     }
 }
 @media(max-width: 830px){
