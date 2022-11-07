@@ -163,7 +163,7 @@ header div h2{
     text-align: center;
     height: fit-content;
     margin: 0 auto;
-    background: red;
+    background: none;
     color: #B36CFF;
     cursor: pointer;
 }
