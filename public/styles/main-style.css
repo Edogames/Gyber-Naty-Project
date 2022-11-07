@@ -250,7 +250,6 @@ footer .btn{
     width: fit-content;
     height: 90%;
     overflow: hidden;
-    background: purple;
 }
 .bottom-border{
     position: relative;
@@ -273,7 +272,6 @@ footer .btn{
     margin-bottom: 30px;
 }
 .date{
-    background: red;
     z-index: 11;
     font-family: 'Montserrat';
     font-style: normal;
